@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-bar{
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width : 600px) and (max-width : 1024px) {
+  .nav-bar{
+    width: 335px;
+    height: 47px;
+  }
+}

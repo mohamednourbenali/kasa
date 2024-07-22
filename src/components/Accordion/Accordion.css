@@ -1,0 +1,57 @@
+
+.big-accordion{
+    width: 1023px;
+}
+.small-accordion{
+    width: 582px;
+}
+.big-accordion, .small-accordion{
+    background-color: #F6F6F6;
+}
+.head{
+    width: 100%;
+    height: 54px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.head h2{
+    color : white ;
+    margin-left: 20px;
+}
+
+.arrow{
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.about-banner{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width : 600px) {
+    .big-accordion, .small-accordion{
+        width: 335px;
+    }
+    .head{
+        height: 30px;
+        border-radius: 5px;
+    }
+    .head h2{
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .arrow{
+        width: 16px;
+        height: 16px;
+        margin-right: 15px;
+    }
+}
