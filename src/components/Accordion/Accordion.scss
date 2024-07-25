@@ -1,0 +1,85 @@
+// Import des variables et mixins
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+
+.big-accordion, .small-accordion {
+  @include background-color(#F6F6F6); 
+  overflow: hidden;
+}
+
+.big-accordion {
+  width: 1023px;
+}
+
+.small-accordion {
+  width: 582px;
+}
+
+.head {
+  width: 100%;
+  height: 54px;
+  border-radius: 10px;
+  background-color: $primary-color; 
+  @include flex-space-between-center;
+  text-align: center;
+
+  h2 {
+    color: $white-color; 
+    margin-left: 20px;
+  }
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+  transition: transform 0.9s ease-in-out;
+  &.rotate {
+    transform: rotate(180deg);
+  }
+}
+
+.content {
+  display: none;
+  opacity: 0;
+  transition:
+    opacity 1s,
+    display 1s allow-discrete;
+  display: flex;
+  flex-direction: column;
+}
+.show {
+  opacity: 1;
+  display: block;
+}
+
+
+.about-banner {
+  margin-bottom: $gap-large; 
+}
+
+// Styles responsifs
+@media screen and (max-width: 600px) {
+  .big-accordion, .small-accordion {
+    width: $mobile-info-container-width;
+  }
+
+  .head {
+    height: 30px;
+    border-radius: 5px;
+    
+
+    h2 {
+      font-size: 13px;
+      font-weight: $font-weight-bold; 
+    }
+  }
+
+  .arrow {
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+  }
+  
+}

@@ -1,0 +1,78 @@
+@import 'mixins.scss';
+
+// Définition des couleurs
+$primary-color: #FF6060;
+$white-color: #FFFFFF;
+$error-color: #FF6060;
+$black-color: #000000;
+$background-color-light: #F6F6F6;
+
+// Définition des tailles de police
+$font-size-large: 288px;
+$font-size-medium: 96px;
+$font-size-small: 36px;
+$font-size-smallest: 18px;
+
+// Définition des dimensions
+$info-container-width: 1240px;
+$mobile-info-container-width: 335px;
+$tag-width: 130px;
+$tag-height: 25px;
+$mobile-tag-width: 84px;
+$mobile-tag-height: 18px;
+$star-size: 20px;
+$mobile-star-size: 13px;
+$host-name-max-width: 80px;
+$mobile-host-name-max-width: 40px;
+$host-img-size: 64px;
+$mobile-host-img-size: 32px;
+$container-margin-top: 50px;
+$mobile-container-margin-top: 25px;
+
+// Définition des poids de police
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+
+// Définition des espacements
+$gap-large: 50px;
+$gap-medium: 25px;
+$gap-small: 15px;
+$gap-x-small: 10px;
+
+// Dimensions pour Carousel
+$carousel-width: 1240px;
+$carousel-height: 415px;
+$carousel-border-radius: 25px;
+$prev-next-size: 54px;
+$carousel-counter-font-size: 16px;
+$carousel-counter-padding: 5px 10px;
+
+// Dimensions pour mobile
+$mobile-carousel-width: 335px;
+$mobile-carousel-height: 255px;
+$mobile-prev-next-size: 24px;
+
+// Dimensions pour Footer
+$footer-height: 320px;
+$mobile-footer-height: 209px;
+$footer-text-font-size: 24px;
+$mobile-footer-text-font-size: 12px;
+$footer-text-max-width: 130px;
+$footer-image-width: 122px;
+$footer-image-height: 40px;
+
+// Dimensions pour Header
+$header-width: 1240px;
+$mobile-header-width: 335px;
+$header-margin-top: 50px;
+$mobile-header-margin-top: 25px;
+$nav-link-font-size: 24px;
+$mobile-nav-link-font-size: 12px;
+$nav-link-gap: 50px;
+$mobile-nav-link-gap: 25px;
+
+// Dimensions spécifiques
+$hotel-cards-width: 1240px;
+$gap-large: 50px;
+$gap-small: 25px;
+$border-radius-large: 25px;

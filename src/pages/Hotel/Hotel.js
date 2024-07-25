@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Navigate, useParams } from "react-router-dom";
-import "./Hotel.css"
+import "./Hotel.scss"
 import hotels from "../../datas/hotels.json"
 import Carrousel from "../../components/Carrousel/Carrousel.js";
 import etoile from "../../images/etoiles/etoile.png"

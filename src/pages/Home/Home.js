@@ -1,4 +1,4 @@
-import './Home.css';
+import './Home.scss';
 import React from 'react';
 import Banner from '../../components/Banner/Banner.js';
 import HotelDisplay from '../../components/HotelDisplay/HotelDisplay.js';

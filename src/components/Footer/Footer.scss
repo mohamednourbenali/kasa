@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss'; 
+
+.footer-container {
+  height: $footer-height;
+  width: 100%;
+  background-color: $black-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: $container-margin-top;
+  box-sizing: border-box;
+
+  p {
+    color: $white-color;
+    font-size: $footer-text-font-size;
+  }
+
+  img {
+    width: $footer-image-width;
+    height: $footer-image-height;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-container {
+    height: $mobile-footer-height;
+
+    p {
+      font-size: $mobile-footer-text-font-size;
+      font-weight: 500;
+      max-width: $footer-text-max-width;
+      padding: 10px;
+    }
+  }
+}

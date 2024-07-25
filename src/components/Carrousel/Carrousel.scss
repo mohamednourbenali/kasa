@@ -1,0 +1,61 @@
+@import '../../styles/variables.scss'; 
+@import '../../styles/mixins.scss'; 
+
+.carousel-container {
+  width: $carousel-width;
+  height: $carousel-height;
+  background-color: $black-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: $container-margin-top;
+  border-radius: $carousel-border-radius;
+}
+
+.prev, .next {
+  width: $prev-next-size;
+  height: $prev-next-size;
+  cursor: pointer;
+  position: absolute;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-counter {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  color: $white-color;
+  padding: $carousel-counter-padding;
+  border-radius: 10px;
+  font-size: $carousel-counter-font-size;
+  font-weight: bold;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-container {
+    width: $mobile-carousel-width;
+    height: $mobile-carousel-height;
+    margin-top: $mobile-container-margin-top;
+  }
+
+  .prev, .next {
+    width: $mobile-prev-next-size;
+    height: $mobile-prev-next-size;
+  }
+}

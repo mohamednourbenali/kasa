@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import hotels from "../../datas/hotels.json";
 import Card from "../Card/Card.js";
-import "./HotelDisplay.css"
+import "./HotelDisplay.scss"
 
 function HotelDisplay() {
     return(

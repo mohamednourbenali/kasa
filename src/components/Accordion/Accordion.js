@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import "./Accordion.css"
+import "./Accordion.scss"
 import ouvrir from "../../images/fleches/fleche-vers-le-haut.png";
 import fermer from "../../images/fleches/fleche-vers-le-bas.png"
 
@@ -11,19 +11,12 @@ function Accordion({title, children, tailleAccordion}) {
     
     return(
         <div className={`${tailleAccordion==="grande" ? `big-accordion` : `small-accordion`}`}>
-            <div className="head">
+            <div className="head" onClick={openClose}>
                 <h2>{title}</h2>
-                <img className="arrow" 
-                    src={isOpen ? ouvrir : fermer} 
-                    alt={
-                        isOpen ? "fleche vers le haut" 
-                            : "fleche vers le bas"
-                        } 
-                    onClick={openClose}
-                />
+                <img className={`arrow ${isOpen ? 'rotate' : ''}`} src={ouvrir} alt="flèche" />
             </div>
             {isOpen && (
-                <div className="content">
+                <div className={`content ${isOpen ? 'show' : ''}`}>
                     {children}
                 </div>
             )}

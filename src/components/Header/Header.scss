@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss'; 
+
+.header {
+  width: $header-width;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $header-margin-top;
+}
+
+.link {
+  text-decoration: none;
+  color: $black-color;
+  font-size: $nav-link-font-size;
+}
+
+.isActive {
+  text-decoration: underline;
+  color: $black-color;
+  font-size: $nav-link-font-size;
+}
+
+.links p {
+  margin-right: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: $nav-link-gap;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 145px;
+  }
+
+  .header {
+    width: $mobile-header-width;
+    margin-top: $mobile-header-margin-top;
+  }
+
+  .isActive, .link {
+    text-decoration: underline;
+    font-size: $mobile-nav-link-font-size;
+    font-weight: 500;
+  }
+
+  .nav-links {
+    gap: $mobile-nav-link-gap;
+  }
+}

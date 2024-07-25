@@ -1,0 +1,64 @@
+// Flexbox mixin pour les colonnes
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Flexbox mixin pour les rangées
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Centrer le contenu
+@mixin center-flex {
+  @include flex-row;
+  align-items: center;
+  justify-content: center;
+}
+
+// Aligner les éléments
+@mixin align-items($alignment) {
+  align-items: $alignment;
+}
+
+// Justifier le contenu
+@mixin justify-content($justification) {
+  justify-content: $justification;
+}
+
+// Mixin pour les media queries
+@mixin media-query($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Mixin pour les couleurs de fond
+@mixin background-color($color) {
+  background-color: $color;
+}
+// Mixin pour l'alignement flexible avec espace entre éléments
+@mixin flex-space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Mixin pour centrer les éléments flex
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin pour ajuster une image pour couvrir son conteneur
+@mixin cover {
+  object-fit: cover;
+}

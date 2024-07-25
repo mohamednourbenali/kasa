@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.hotel-cards-container {
+  width: $hotel-cards-width;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $background-color-light;
+  border-radius: $border-radius-large;
+  gap: $gap-large;
+  padding-top: $gap-small;
+  margin-top: $container-margin-top;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .hotel-cards-container {
+    width: 100%;
+    background-color: none;
+    border: 0px;
+    gap: $gap-small;
+    padding-top: 0px;
+    margin-top: $mobile-container-margin-top;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css"
+import "./About.scss"
 import image from "../../images/About.jpg"
 import Banner from "../../components/Banner/Banner";
 import Footer from "../../components/Footer/Footer";

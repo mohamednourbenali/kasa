@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import './index.css';
+import './index.scss';
 import Header from'./components/Header/Header.js'
 import Home from './pages/Home/Home.js';
 import About from './pages/About/About.js';
@@ -16,10 +16,10 @@ root.render(
         <Header />
       </div>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/About' element={<About />} />
-        <Route path='/Hotel/:hotelid' element={<Hotel />} />
-        <Route path='*' element={<Error />} />
+        <Route path='/' element={<Home />} /> {/* Route pour la page d'accueil */} 
+        <Route path='/About' element={<About />} /> {/* Route pour la page À propos */}
+        <Route path='/Hotel/:hotelid' element={<Hotel />} /> {/* Route pour les détails d'un hotel spécifique */}
+        <Route path='*' element={<Error />} /> {/* Route pour page d'erreur */}
       </Routes>
     </Router>
   </React.StrictMode>

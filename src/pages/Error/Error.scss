@@ -1,0 +1,53 @@
+// Import des variables
+@import '../../styles/variables.scss';
+// Import des mixins
+@import '../../styles/mixins.scss';
+
+
+.error-page {
+  @include flex-center; 
+  flex-direction: column;
+  line-height: 50px;
+}
+
+.error {
+  color: $error-color;
+  font-size: $font-size-large;
+}
+
+.error-message {
+  font-size: $font-size-small;
+  color: $error-color;
+}
+
+.link-home {
+  text-decoration: none;
+  color: $black-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Styles responsifs
+@media screen and (max-width: 600px) {
+  .error {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+  }
+
+  .error-message {
+    font-size: $font-size-smallest;
+    font-weight: $font-weight-medium;
+    max-width: 200px;
+    line-height: 29px;
+  }
+
+  .error-page {
+    gap: $gap-medium;
+  }
+
+  .link-home {
+    text-decoration: underline;
+  }
+}

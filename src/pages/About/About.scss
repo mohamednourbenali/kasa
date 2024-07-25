@@ -1,0 +1,22 @@
+// Import des variables
+@import '../../styles/variables.scss';
+// Import des mixins
+@import '../../styles/mixins.scss';
+
+
+.about-banner {
+  @include flex-center; 
+}
+
+.about-accordion-container {
+  @include flex-center; 
+  flex-direction: column;
+  gap: $gap-large;
+}
+
+// Styles responsifs
+@media screen and (max-width: 600px) {
+  .about-accordion-container {
+    gap: $gap-medium;
+  }
+}
